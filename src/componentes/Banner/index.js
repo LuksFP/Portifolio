@@ -7,11 +7,11 @@ export default function Banner() {
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
                 <h1 className={styles.titulo}>
-                    Hello Word
+                    Hello World
                 </h1>
 
                 <p className={styles.paragrafo}>
-                    Welcome to my pessoal space, and today i will tell my history on  Web Developmet :)
+                    Welcome to my pessoal space, today we will see my Portifolio with my projects  :)
                 </p>
             </div>
 
@@ -25,7 +25,7 @@ export default function Banner() {
                 <img
                     className={styles.minhaFoto}
                     src={minhaFoto}
-                    alt="Foto do Antônio Evaldo sorrindo"
+                    alt="Foto do Lucas"
                 />
             </div>
         </div>

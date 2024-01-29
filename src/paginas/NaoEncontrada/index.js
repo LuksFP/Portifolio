@@ -1,10 +1,10 @@
-import BotaoPrincipal from 'componentes/BotaoPrincipal';
 import styles from './NaoEncontrada.module.css';
 import erro404 from 'assets/erro_404.png'
+import BotaoPrincipal from 'componentes/BotaoPrincipal';
 import { useNavigate } from 'react-router-dom';
 
 export default function NaoEncontrada() {
-    const navegar = useNavigate()
+    const navegar = useNavigate();
 
     return (
         <>
@@ -19,17 +19,15 @@ export default function NaoEncontrada() {
                     Are you sure this is what you were looking for ?
                 </p>
 
-                <p className={styles.paragrafo}>
-                Wait a few moments and reload the page, or return to the home page.
-                </p>
+               
 
-                <div className={styles.botaoContainer}
-                onClick={()=> navegar("-1")}
-                
+                <div
+                    className={styles.botaoContainer}
+                    onClick={() => navegar(-1)}
                 >
-                    <button><BotaoPrincipal tamanho="lg">
-                    To go back
-                        </BotaoPrincipal></button>
+                    <BotaoPrincipal tamanho="lg">
+                        Come Back
+                    </BotaoPrincipal>
                 </div>
 
                 <img
